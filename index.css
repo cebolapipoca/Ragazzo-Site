@@ -9,6 +9,11 @@
     src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: RagazzoFontExtraBold;
+    src: url(fonts/GrotaRoundedExtraBold.otf);
+}
+
 
 body {
     background-color: antiquewhite;
@@ -284,6 +289,7 @@ main {
     gap: 10px;
     position: absolute;
     top: 1%;
+    display: none;
 }
 
 .produto-text1024  h2{
@@ -324,6 +330,7 @@ main {
     justify-content: flex-end;
     align-items: flex-end;
     z-index: 1;
+    display: none;
 }
 
 .heart-icon img{
@@ -438,13 +445,20 @@ main {
 
     .produto-imagem img {
         margin-top: 40px;
+        
     }
 
     main {
         margin-top: 7px;
     }
     
-    
+    .produto-text1024 {
+        display: flex;
+    }
+
+    .heart-icon {
+        display: flex;
+    }
 }
 
 @media screen and (min-height: 800px) {
@@ -473,7 +487,6 @@ footer {
     display: flex;
     flex-direction: column;
     font-family: RagazzoFont;
-    
 }
 
 footer input {
@@ -595,3 +608,109 @@ footer button:hover {
     flex-direction: column;
 }
 
+@media screen and (min-width: 1023px) {
+    footer {
+        display: none;
+    }
+
+    .footer-content2 {
+        display: none;
+    } 
+}
+
+.footer_desktop {
+    width: 100%;
+    display: flex;
+    padding-top:0px;
+    padding-bottom:0px;
+    
+}
+
+.footer_desktop_content1 {
+    width: 100%;
+    background-color: #012928;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: RagazzoFontExtraBold;
+    color: #e7bb37;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.footer_desktop_content1 h2 {
+    width: 35%;
+}
+
+.footer_desktop_atendimento {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.footer_desktop_atendimento_phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+#capitais {
+    border-right: 1px solid white;
+}
+
+.footer_desktop_atendimento_phone h2 {
+    white-space: nowrap;
+    width: 100%;
+    font-size: 16px;
+    color: #e2b737;
+}
+
+.footer_desktop_atendimento_phone h3 {
+    font-size: 27px;
+    font-weight: 600;
+    color: #f5c63a;
+}
+
+
+
+.footer_desktop_content2 {
+    width: 100%;
+    background-color: #005150;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer_desktop_content2 ul {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 100;
+    gap: 14px;
+    color: white;
+    font-family: RagazzoFont;
+    border-right: 1px solid;
+    text-align: center;
+}
+
+.footer_desktop_content2 h1 {
+    margin-bottom: 20px;
+    color: #e2b737;
+}
+
+.footer_desktop_content2_email {
+
+}
