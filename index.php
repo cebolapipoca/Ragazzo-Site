@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ragazzo</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
 
     <?php 
+        $a = 1;
+        $b = 1;
+        $c = 1;
 
         $Produtos = [
-        
+            
             $Produto = 
             [
                 'nome' => "MENU INDIVIDUAL 1 - ENTRADA + PRATO + BEBIDA",
@@ -197,12 +200,12 @@
                     <div class="produto-modal-preco">
                         <h3>Total:</h3>
                         <h2>R$</h2>
-                        <h1><?php echo $Produto['preco']?></h1>
+                        <h1><strong><?php echo $Produto['preco']?></strong></h1>
                     </div>
                 </div>
 
                 <div class="heart-icon">
-                    <img src="imagens/coracaonew.png" alt="">
+                        <img src="imagens/coracaonew.png" id="<?php echo 'imagemCoracao' . $b++ ?>"  onmouseout="RetirarHoverCoracao(<?php echo 'imagemCoracao' . $c++ ?>)" alt="" onmouseover="HoverCoracao(<?php echo 'imagemCoracao' . $a++ ?>)">
                 </div>
 
 
@@ -218,7 +221,6 @@
                 <button class="">VERIFICAR DISPONIBILIDADE</button>
                 <div class="produto-verificar-preco"><h2>TOTAl: <h1><?php echo $Produto['preco']?></h1</h2></div>
             </div>
-            
         </div> 
         <?php } ?>
     </main>
@@ -339,6 +341,7 @@
         </div>
     </div>
 
-<link rel="stylesheet" href="index.js">
+        <script src="index.js"></script>
 </body>
 </html>
+

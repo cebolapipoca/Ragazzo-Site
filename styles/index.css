@@ -1,0 +1,31 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@import url(footer_1024.css);
+
+
+@font-face {
+    font-family: RagazzoFont;
+    src: url(fonts/zGrotaRounded.otf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: RagazzoFontExtraBold;
+    src: url(fonts/GrotaRoundedExtraBold.otf);
+}
+
+
+body {
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+
+
+
+

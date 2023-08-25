@@ -1,0 +1,138 @@
+footer {
+    width: 100%;
+    background-color: #005150;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    font-family: RagazzoFont;
+}
+
+footer input {
+    width: 50%;
+    transform: skewY(deg);
+    padding: 13px;
+    border-top-left-radius: 8px;  
+    border-bottom-left-radius: 8px;
+    background-color: #fdcd3c;  
+    border: none;
+}
+
+.footer-input {
+    display: flex;
+}
+
+footer button {
+    width: 40%;
+    padding: 5px;
+    border-radius: 12px ;
+    border: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+    right: 2px;
+    background-color: #d3a92c;  
+    color: #B10242;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+footer button:hover {
+    background-color: #b69125;  
+}
+
+.footer-content1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-content1 h3 { /*Fique por dentro*/
+    color: #f5be1b;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-content1 h4 {  /*Receba lançamentos e promoções*/
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.footer-content1  h2{  /*Siga o Ragazzo*/
+    margin-top: 10px;
+    color: #f5be1b;
+    margin-bottom: 8px;
+}
+
+.footer-content1-text {
+    margin-left: 10px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icons img {
+    width: 9%;
+}
+
+
+
+.footer-content2 {
+    width: 100%;
+    font-size: 12px;
+    background-color: #012928;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #f5c63a;
+    padding-bottom: 10px;
+}
+
+.footer-content2 img {
+    width: 5%;
+}
+
+.footer-content2 h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-content2-atendimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.atendimento-capitais {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid white;
+}
+
+.atendimento-outros {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1023px) {
+    footer {
+        display: none;
+    }
+
+    .footer-content2 {
+        display: none;
+    } 
+}
