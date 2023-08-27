@@ -127,7 +127,7 @@ footer button:hover {
     flex-direction: column;
 }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1000px) {
     footer {
         display: none;
     }

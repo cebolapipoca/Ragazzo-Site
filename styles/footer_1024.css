@@ -1,3 +1,24 @@
+@font-face {
+    font-family: RagazzoFont;
+    src: url(zGrotaRounded.otf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: RagazzoFontExtraBold;
+    src: url(GrotaRoundedExtraBold.otf);
+}
+
+@font-face {
+    font-family: RagazzoRoundedBlack;
+    src: url(GrotaRoundedBlack.otf);
+}
+
+
 .footer_desktop {
     width: 100%;
     display: flex;
@@ -50,13 +71,13 @@
     white-space: nowrap;
     width: 100%;
     font-size: 16px;
-    color: #e2b737;
+    color: #FEC34A;
 }
 
 .footer_desktop_atendimento_phone h3 {
     font-size: 27px;
     font-weight: 600;
-    color: #f5c63a;
+    color: #FEC34A;
 }
 
 
@@ -67,8 +88,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 }
 
 .footer_desktop_content2 ul {
@@ -78,19 +100,124 @@
     justify-content: center;
     white-space: nowrap;
     font-size: 13px;
-    font-weight: 100;
-    gap: 14px;
-    color: white;
-    font-family: RagazzoFont;
-    border-right: 1px solid;
-    text-align: center;
+    color: rgba(255, 255, 255, 0.877);
+    border-right: 0.1px solid;
+    align-items: center;
+    margin-right: 20px;
 }
 
-.footer_desktop_content2 h1 {
-    margin-bottom: 20px;
-    color: #e2b737;
+.footer_desktop_content2 ul nav {
+    display: flex;
+    flex-direction: column;
+    font-family: RagazzoFont;
+    font-size: 13px;
+    gap: 18px;
+}
+
+.footer_desktop_content2 ul nav h1 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #e7bb37;
+    font-weight: 700;
+}
+
+.titulo-2 {
+    margin-bottom: 10px ;
+}
+
+.footer_desktop_content2_email h1 {
+    color: #FEC34A;
+    font-family: RagazzoFontExtraBold;
+    
+}
+
+.footer_desktop_content2_email h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-family: RagazzoFont;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 .footer_desktop_content2_email {
+    width: 30%;
+    height: 290px;
+}
 
+.input_footer_destktop {
+    width: 100%;
+    display: flex;
+    
+}
+
+.footer_desktop_content2_email input {
+    width: 100%;
+    transform: skewY(deg);
+    padding: 17px;
+    border-top-left-radius: 15px;  
+    border-bottom-left-radius: 15px;
+    background-color: #fdcd3c;  
+    border: none;
+}
+
+.footer_desktop_content2_email button {
+    width: 60%;
+    padding: 5px;
+    border-radius: 12px ;
+    border: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 14px;
+    position: relative;
+    right: 2px;
+    background-color: #e6ac0b;  
+    color: #B10242;
+    font-size: 15px;
+    font-weight: 800;
+    transform: skewY(-0.2deg);
+    font-size: 16px;
+    white-space: nowrap;
+    font-family: RagazzoRoundedBlack;
+}
+
+.footer_desktop_box2 {
+    margin-left: 20px;
+    padding-right: 40px;
+}
+
+.footer_desktop_redesSociais {
+    margin-top: 45px;
+    color: #FEC34A;
+    font-family: RagazzoFontExtraBold;
+}
+
+.footer_desktop_redesSociais h3 {
+
+}
+
+.desktop_redesSociais_icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.desktop_redesSociais_icons img {
+    width: 10%;
+    
+}
+
+ul nav li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1020px) {
+    .footer_desktop {
+        display: none;
+    }
+
+    .footer_desktop_content2 {
+        display: none;
+    }
 }

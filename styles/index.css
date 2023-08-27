@@ -6,17 +6,17 @@
 
 @font-face {
     font-family: RagazzoFont;
-    src: url(fonts/zGrotaRounded.otf);
+    src: url(zGrotaRounded.otf);
 }
 
 @font-face {
     font-family: Nunito;
-    src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf);
+    src: url(Nunito-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: RagazzoFontExtraBold;
-    src: url(fonts/GrotaRoundedExtraBold.otf);
+    src: url(GrotaRoundedExtraBold.otf);
 }
 
 

@@ -1,5 +1,22 @@
 
+@font-face {
+    font-family: RagazzoFont;
+    src: url(zGrotaRounded.otf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: RagazzoFontExtraBold;
+    src: url(GrotaRoundedExtraBold.otf);
+}
+
+
 header {
+    visibility: hidden; 
     background-color: #005150;
     width: 100%;
     padding-top: 10px;
@@ -7,8 +24,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-   /* visibility: hidden; */
+    position: fixed;
+    top: 0%;
+    z-index: 4;
+}
+
+header * {
+    visibility: visible;
 }
 
 

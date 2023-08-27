@@ -33,7 +33,6 @@ main {
 
 .produto-imagem-texto {
     width: 100%;
-    
     position: absolute;
     top: 0%;
     left: -3%;
@@ -49,19 +48,25 @@ main {
     z-index: 1;
 }
 
+
+
 .produto-imagem-texto h3 {
+    width: 140px;
     border-top: #B10242 2px solid;
+    display: flex;
+    text-align: end;
 }
 
-.preco {
-    width: 102px;
+
+
+.preco  {
+    width: 100px;
     display: flex;
-    justify-content: flex-start;
     color: #B10242;
     font-weight: 700;
     font-size: 25px;
-    white-space: nowrap;
     margin-bottom: 10px;
+    white-space: nowrap;
 }
 
 .produto-verificar {

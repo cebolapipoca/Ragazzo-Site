@@ -211,8 +211,8 @@
 
             <div class="produto-imagem">
                 <div class="produto-imagem-texto">
-                    <h3>Menu <br> Individual 2- <br> Entrada + <br> Prato + Bebida <br></h3>
-                    <div class="preco"><h2><?php echo $Produto['preco']?></h2></div>
+                    <h3><?php echo $Produto['nome']?></h3>
+                    <div class="preco"><h2><?php echo 'R$ ' . $Produto['preco']?></h2></div>
                 </div>
                 <img src="<?php echo $Produto['imagem']?>" alt="">
             </div>
@@ -292,24 +292,26 @@
     </footer>
 
     <div class="footer_desktop_content2"> 
-        <ul>
-            <div><h1>Produtos</h1></div>
+        <ul class="footer_desktop_box1">
 
-            <li>Frete Grátis</li>
-            <li>Combos</li>
-            <li>Pizzas</li>
-            <li>Massas</li>
-            <li>Pratos</li>
-            <li>Coxinhas</li>
-            <li>Salgados</li>
-            <li>Sobremesas</li>
-            <li>Bebidas</li>
-            <li>Kit Ragazzo</li>
+            <nav>
+                <div><h1>Produtos</h1></div>
+                    <li>Frete Grátis</li>
+                    <li>Combos</li>
+                    <li>Pizzas</li>
+                    <li>Massas</li>
+                    <li>Pratos</li>
+                    <li>Coxinhas</li>
+                    <li>Salgados</li>
+                    <li>Sobremesas</li>
+                    <li>Bebidas</li>
+                    <li>Kit Ragazzo</li>
+            </nav>
         </ul>
 
-        <ul>
-            <div><h1>O Ragazzo</h1></div>
-
+        <ul class="footer_desktop_box2">
+        <nav>
+        <div class="titulo-2"><h1>O Ragazzo</h1></div>
             <li>SAC RAGAZZO(SAC)</li>
             <li>Regras do Delivery</li>
             <li>termos de uso e políticas de privacidade</li>
@@ -319,23 +321,24 @@
             <li>Tabela Nutricional Ragazzo Express</li>
             <li>Tabela de Alergênicos Ragazzo Express</li>
             <li>Faça sua festa no Ragazzo</li>
+        </nav>
         </ul>
         
         <div class="footer_desktop_content2_email">
             <h1>Fique por dentro</h1>
             <h2>receba lançamentos e promoções</h2>
-             <div><input type="email" name="" id=""> <button></button></div>
+             <div class="input_footer_destktop"><input type="email" name="" id="" placeholder="email"> <button>me cadastre!</button></div>
 
-             <div>
-                <div>Siga o Ragazzo</div>
+             <div class="footer_desktop_redesSociais">
+                <h3>Siga o Ragazzo</h3>
 
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <div class="desktop_redesSociais_icons">
+                    <img src="imagens/facebookIcon.svg.svg" alt="">
+                    <img src="imagens/TwitterIcon.svg" alt="">
+                    <img src="imagens/YoutubeIcon.svg" alt="">
+                    <img src="imagens/LinkedinIcon.svg" alt="">
+                    <img src="imagens/InstagramIcon.svg" alt="">
+                    <img src="imagens/WhatsappIcon.svg" alt="">
                 </div>
              </div>
         </div>
