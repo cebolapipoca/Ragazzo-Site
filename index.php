@@ -144,9 +144,48 @@
         ];
     ?>
     
+    <menu>
+        <div class="menu-user">
+            <img src="" alt="">
+            
+            <div>
+                <h1>Olá, Visitante</h1>
+                 <h2>faça login ou cadastre-se</h2>
+            </div>
+        </div>
+
+        <nav>
+            <li>CARDÁPIO</li>
+            <li>PROMOÇÕES NO PRECINHO</li>
+            <li>ACOMPANHA SEU PEDIDO</li>
+            <li>CONHEÇA O RAGAZZO</li>
+            <li>SAC RAGAZZO (SAC)</li>
+            <li>TRABALHE NO RAGAZZO</li>
+            <li>ENCONTRE SEU RAGAZZO</li>
+            <li>TENHA O SEU PRÓPRIO RAGAZZO</li>
+            <li>FAÇA SUA FESTA NO RAGAZZO</li>
+            <li>REPLAY RAGAZZO</li>
+            <li>REPLAY RAGAZZO - TERMOS E CONDIÇÕES</li>
+            <li>REGULAMENTO - PEDE PRONTO RAGAZZO</li>
+            <li>REGULAMENTO - PEDE PRONTO RAGAZZO EXPRESS</li>
+            <li>REGULAMENTO - PEDE PRONTO SEMANA DA PIZZA</li>
+        </nav>
+
+        <div class="menu-termos">
+            <h3>REGRAS DO DELIVERY</h3>
+            <h3>TERMOS DE USO E POLÍTICAS DE PRIVACIDADE</h3>
+            <h3>TERMOS E CONDIÇÕES</h3>
+        </div>
+    </menu>
+
     <header>
         <div class="header-content" id="content-menu-titulo">
-            <img src="imagens/menu-ragazzo.png" alt="" class="ragazzo-header-menu">
+            <div class="ragazzo-header-menu">
+                <div class="barra1"></div>
+                <div class="barra2"></div>
+                <div class="barra3"></div>
+            </div>
+
             <img src="imagens/ragazzo_logo.png" alt="" class="ragazzo-titulo">
         </div>
         
@@ -161,6 +200,21 @@
         <picture>
         <source media="(min-width: 800px )" srcset="imagens/Ragazzo_slide1_1024.png">
         <img src="imagens/Ragazzo_slide1.png" alt="" srcset="" >
+        </picture>
+
+      
+        <picture>
+
+        </picture>
+
+
+        <picture>
+
+        </picture>
+
+
+        <picture>
+
         </picture>
     </div>
 

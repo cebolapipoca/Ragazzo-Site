@@ -15,6 +15,33 @@
 }
 
 
+menu {
+    width: 100%;
+    background-color: #005150;
+    display: none;
+
+}
+
+.menu-user {
+   
+}
+
+menu nav {
+   
+    
+}
+
+menu nav li {
+   
+
+}
+
+.menu-termos {
+
+}
+
+
+
 header {
     visibility: hidden; 
     background-color: #005150;
@@ -42,6 +69,8 @@ header * {
     align-items: center;
     gap: 10px;
     padding: 0px, 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
    /* visibility: visible; */
 }
 
@@ -52,9 +81,34 @@ header * {
 
 .ragazzo-header-menu
 {
-    width: 10%;
-    max-width: 30px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+   
 }
+
+.barra1 {
+    width: 25px;
+    height: 2.5px;
+    background-color: bisque;
+}
+
+.barra2 {
+    width: 14.5px;
+    height: 2px;
+    background-color: bisque;
+}
+
+.barra3 {
+    width: 25px;
+    height: 2px;
+    background-color: bisque;
+}
+
+
 
 #content-menu-titulo {
     padding-left: 10px;
@@ -65,7 +119,6 @@ header * {
     margin-bottom: 5px;
     gap: 20px;
     width: 40%;
-   
 }
 
 @media screen and (min-width: 650px) {
@@ -81,18 +134,47 @@ header * {
 
 @media screen and (min-width: 1000px) {
     .ragazzo-titulo {
-        max-width: 200px;
+        max-width: 180px;
     }
+
+
+.ragazzo-header-menu
+{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    justify-content: center;
+   
+}
+
+.barra1 {
+    width: 40px;
+    height: 2.5px;
+    background-color: bisque;
+}
+
+.barra2 {
+    width: 20px;
+    height: 2px;
+    background-color: bisque;
+}
+
+.barra3 {
+    width: 30px;
+    height: 2px;
+    background-color: bisque;
+}
 }
 
 /**/
 
 
-
-
 .ragazzo-slide-carrossel {
    width: 100%;
-   
+   overflow-x: hidden;
+   display: flex;
 }
 
 .ragazzo-slide-carrossel img{
