@@ -142,6 +142,10 @@
                 'imagem' => "imagens/produtos/produto18.png"
             ],
         ];
+
+        include_once "RagazzoProdutosClass.php";
+
+        $novoProduto = new Produto();
     ?>
     
     <menu>

@@ -1,0 +1,83 @@
+
+body {
+    background-color: antiquewhite;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    height: 100vh;
+}
+
+
+.form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-fieldset-div1 {
+    display: flex;
+    gap: 5px;
+}
+
+#NomeProduto {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#PrecoProduto {
+    width: 30%;
+}
+
+fieldset h1 {
+    font-size: 30px;
+}
+
+fieldset select {
+    width: 60%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.destacar-produto div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    border-radius: 12px;
+    border: 1px solid;
+}
+
+fieldset button:hover {
+    background-color: rgb(175, 178, 180);
+    cursor: pointer;
+}
