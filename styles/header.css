@@ -191,7 +191,10 @@ aside {
     overflow-y: hidden;
     align-items: center;
     gap: 0px;
-    
+}
+
+aside a {
+    text-decoration: none;
 }
 
 aside li {

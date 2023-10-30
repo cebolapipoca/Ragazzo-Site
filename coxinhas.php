@@ -5,147 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ragazzo</title>
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/ProdutoPrincipal.css">
 </head>
 <body>
 
     <?php 
-        $a = 1;
-        $b = 1;
-        $c = 1;
-
-        $Produtos = [
-            
-            $Produto = 
-            [
-                'nome' => "MENU INDIVIDUAL 1 - ENTRADA + PRATO + BEBIDA",
-                'preco' => "39,90",
-                'imagem' => "imagens/produtos/produto1.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "MENU INDIVIDUAL 2 - ENTRADA + PRATO + BEBIDA",
-                'preco' => "49,90",
-                'imagem' => "imagens/produtos/produto2.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "MENU INDIVIDUAL 3 - ENTRADA + PRATO + BEBIDA",
-                'preco' => "59,90",
-                'imagem' => "imagens/produtos/produto3.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "COXINHA DE FRANGO COM CREMELY",
-                'preco' => "3,49",
-                'imagem' => "imagens/produtos/produto4.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "COXINHA DE CALABRESA",
-                'preco' => "3,49",
-                'imagem' => "imagens/produtos/produto5.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "COXINHA DE 4 QUEIJOS",
-                'preco' => "3,49",
-                'imagem' => "imagens/produtos/produto6.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "60 COXINHAS CLÁSSICAS",
-                'preco' => "119,90",
-                'imagem' => "imagens/produtos/produto7.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "40 COXINHAS CLÁSSICAS",
-                'preco' => "87,90",
-                'imagem' => "imagens/produtos/produto8.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "20 COXINHAS CLÁSSICAS",
-                'preco' => "43,90",
-                'imagem' => "imagens/produtos/produto9.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "10 COXINHAS CLÁSSICAS",
-                'preco' => "26,90",
-                'imagem' => "imagens/produtos/produto10.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "100 MINICOXINHAS CLÁSSICAS",
-                'preco' => "89",
-                'imagem' => "imagens/produtos/produto11.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "50 MINICOXINHAS CLÁSSICAS",
-                'preco' => "44,90",
-                'imagem' => "imagens/produtos/produto12.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "25 MINICOXINHAS CLÁSSICAS",
-                'preco' => "26,90",
-                'imagem' => "imagens/produtos/produto13.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "MINICHURROS DE DOCE DE LEITE",
-                'preco' => "1,98",
-                'imagem' => "imagens/produtos/produto14.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "SUCO DE LIMÃO 300ML",
-                'preco' => "9,90",
-                'imagem' => "imagens/produtos/produto15.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "SUCO DE MORANGO 300ML",
-                'preco' => "9,90",
-                'imagem' => "imagens/produtos/produto16.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "SUCO DE MARACUJÁ 300ML",
-                'preco' => "9,90",
-                'imagem' => "imagens/produtos/produto17.png"
-            ],
-
-            $Produto = 
-            [
-                'nome' => "SUCO DE LARANJA 1L",
-                'preco' => "17,90",
-                'imagem' => "imagens/produtos/produto18.png"
-            ],
-        ];
-
-        include_once "RagazzoProdutosClass.php";
-
+       
+       include_once "RagazzoProdutosClass.php";
+       
         $novoProduto = new Produto();
+
+        $CategoriaProduto = $novoProduto->PesquisarCategoria('coxinhas')
+
     ?>
     
     <menu>
@@ -200,48 +71,31 @@
         </div>
     </header>
 
-    <div class="ragazzo-slide-carrossel">
-        <picture>
-        <source media="(min-width: 800px )" srcset="imagens/Ragazzo_slide1_1024.png">
-        <img src="imagens/Ragazzo_slide1.png" alt="" srcset="" >
-        </picture>
-
-      
-        <picture>
-
-        </picture>
-
-
-        <picture>
-
-        </picture>
-
-
-        <picture>
-
-        </picture>
-    </div>
-
     <aside>
-        <li class="verde">frete grátis</li>
-        <li class="vermelho">combos</li>
-        <li class="amarelo">pizzas</li>
-        <li class="verde">massas</li>
-        <li class="vermelho">pratos</li>
-        <li class="amarelo">coxinhas</li>
-        <li class="verde">salgados</li>
-        <li class="vermelho">sobremesas</li>
-        <li class="amarelo">bebidas</li>
-        <li class="verde">kit ragazzo</li>
-        <li class="vermelho">congelados</li>
+        <a href="fretegratis.php"><li class="verde">frete grátis</li></a>
+        <a href="combos.php"><li class="vermelho">combos</li></a>
+        <a href="pizzas.php"><li class="amarelo">pizzas</li></a>
+        <a href="massas.php"><li class="verde">massas</li></a>
+        <a href="pratos.php"><li class="vermelho">pratos</li></a>
+        <a href="coxinhas.php"><li class="amarelo">coxinhas</li></a>
+        <a href="salgados.php"><li class="verde">salgados</li></a>
+        <a href="sobremesas.php"><li class="vermelho">sobremesas</li></a>
+        <a href="bebidas.php"><li class="amarelo">bebidas</li></a>
+        <a href="kit_ragazzo.php"><li class="verde">kit ragazzo</li></a>
+        <a href="congelados.php"><li class="vermelho">congelados</li></a>
     </aside>
 
+    <div class="sessao-titulo">
+            <h2><a href="">Página Inicial/</a>Frete Grátis</h2>
+
+            <div><h1><a>Experimente</a> nossos produtos com frete grátis</h1></div>
+        </div>
     
     <main>
-    <?php foreach ($Produtos as $Produto) { ?>
+    <?php foreach ( $CategoriaProduto as $Produto) { ?>
         <div class="produto">
                 <div class="produto-text1024">
-                    <h2><?php echo $Produto['nome']?></h2>
+                    <h2><?php echo $Produto['Nome']?></h2>
                      <div class="produto-text1024-preco">
                         <h3>R$</h3>
                         <h1><?php echo $Produto['preco']?></h1>
@@ -250,7 +104,7 @@
 
                 <div class="produto-modal">
                     <div class="produto-modal-text1">
-                        <h3><?php echo $Produto['nome']?></h3>
+                        <h3><?php echo $Produto['Nome']?></h3>
                     </div>
 
                     <button>VERIFICAR DISPONIBILIDADE</button>
@@ -262,17 +116,15 @@
                     </div>
                 </div>
 
-                <div class="heart-icon">
-                        <img src="imagens/coracaonew.png" id="<?php echo 'imagemCoracao' . $b++ ?>"  onmouseout="RetirarHoverCoracao(<?php echo 'imagemCoracao' . $c++ ?>)" alt="" onmouseover="HoverCoracao(<?php echo 'imagemCoracao' . $a++ ?>)">
-                </div>
+                
 
 
             <div class="produto-imagem">
                 <div class="produto-imagem-texto">
-                    <h3><?php echo $Produto['nome']?></h3>
+                    <h3><?php echo $Produto['Nome']?></h3>
                     <div class="preco"><h2><?php echo 'R$ ' . $Produto['preco']?></h2></div>
                 </div>
-                <img src="<?php echo $Produto['imagem']?>" alt="">
+                <img src="<?php echo 'imagens/produtos/' . $Produto['imagem']?>" alt="">
             </div>
 
             <div class="produto-verificar">
@@ -402,7 +254,7 @@
         </div>
     </div>
 
-        <script src="index.js"></script>
+        
 </body>
 </html>
 

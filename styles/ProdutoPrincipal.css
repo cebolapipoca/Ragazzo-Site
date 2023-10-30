@@ -1,0 +1,87 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@import url(footer_1024.css);
+
+
+@font-face {
+    font-family: RagazzoFont;
+    src: url(zGrotaRounded.otf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: RagazzoFontExtraBold;
+    src: url(GrotaRoundedExtraBold.otf);
+}
+
+@font-face {
+    font-family: RoundedBlack;
+    src: url('GrotaRoundedBlack.otf');
+}
+
+
+body {
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+
+.sessao-titulo {
+    width: 98%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 60px;
+    margin-top: 25px;
+}
+
+.sessao-titulo h1 {
+    color: #005150;
+    font-size: 27px;
+    font-family: RoundedBlack;
+    margin-left: 60px; 
+}
+
+
+
+.sessao-titulo h2 {
+    color: #B10242;
+    
+}
+
+.sessao-titulo a {
+    color: #ED005B;
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.sessao-titulo div a {
+    margin-left: 0px;
+}
+
+aside {
+    position: fixed;
+    top: 14%;
+    z-index: 5;
+    background-color: antiquewhite;
+}
+
+header {
+    visibility: visible;
+}
+
+.restofrase {
+    color: #005150;
+}
+
+
+@media screen and (max-width: 1150px) {
+    
+}
